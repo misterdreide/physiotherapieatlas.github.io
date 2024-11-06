@@ -1,5 +1,5 @@
 body {
-    background-color: #87CEES;
+    background-color: white;
   }
   
 main {
@@ -23,7 +23,7 @@ main {
   }
 
   .carousel {
-    max-height: 60vh; /* Maximalhöhe des Carousels */
+    max-height: 80vh; /* Maximalhöhe des Carousels */
     overflow: hidden;  /* Überlauf verstecken */
 }
 
@@ -40,6 +40,13 @@ main {
     left: 50%;          /* In der Mitte des Carousels */
     transform: translate(-50%, -50%); /* Zentrieren */
     text-align: center; /* Text zentrieren */
+}
+
+.card-title{
+ font-size: 25px;
+}
+.card-text{
+  font-size: 20px;
 }
 
 
@@ -111,7 +118,8 @@ a{
   padding-right: 2rem;
   padding-top: 0rem;
   padding-bottom: 1rem;
-  height: 600px;
+  height: 400px;
+  place-items: center;
   border-radius: 0;
   cursor: pointer;
   margin-top: 100px;
@@ -131,14 +139,7 @@ a{
 
 .card-body{
   margin-top: -60px;
-padding-left: 2rem;
-}
 
-
-
-.card-body1{
-  height: 150px;
-  margin-top: -60px;
 padding-left: 2rem;
 }
 
@@ -147,6 +148,7 @@ padding-left: 2rem;
   height: 250px;
   width: 250px;
   position: relative;
+
   left: 30px;
   top: -80px;
   object-fit: cover;
@@ -157,7 +159,7 @@ padding-left: 2rem;
   height: 250px;
   width: 250px;
   position: relative;
-  left: 90px;
+  left: 30px;
   top: -80px;
   object-fit: cover;
 }
@@ -170,6 +172,80 @@ padding-left: 2rem;
   transform: scale(1.24);
 }
 
+
+/* Container für das Symbol und den Text */
+.social-container {
+  display: flex; /* Flexbox für eine horizontale Anordnung */
+  align-items: center; /* Vertikale Zentrierung der Elemente */
+  margin-bottom: 1rem; /* Abstand nach unten */
+  flex-direction: column;
+}
+
+/* Allgemeines Styling für alle Symbole */
+.social-icon {
+  font-size: 3rem; /* Größe des Symbols */
+  transition: transform 0.3s ease; /* Sanfte Übergänge bei Hover */
+}
+
+/* Effekt beim Hover über das Symbol (Vergrößerung) */
+.social-icon:hover {
+  transform: scale(1.1); /* Vergrößert das Symbol bei Hover */
+}
+
+/* Styling des Textes */
+.social-text {
+  margin-left: 1rem; /* Abstand zwischen Symbol und Text */
+  font-size: 1.2rem; /* Schriftgröße des Textes */
+  font-weight: bold; /* Text fett */
+  color: #333; /* Textfarbe */
+}
+
+/* Facebook Symbol */
+.facebook-icon {
+  color: #3b5998; /* Typische Facebook-Blau-Farbe */
+}
+
+/* YouTube Symbol */
+.youtube-icon {
+  color: #FF0000; /* Typische YouTube-Rot-Farbe */
+}
+
+/* Instagram Symbol */
+.instagram-icon {
+  color: #E1306C; /* Typische Instagram-Pink-Farbe */
+}
+
+
+
+footer {
+  padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
+  background-color: #333; /* Dunkler Hintergrund */
+  color: white; /* Weiße Schriftfarbe */
+
+  text-align:justify; /* Zentriert den Text */
+ 
+}
+
+footer a{
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+footer a:hover {
+ 
+  color:lightblue; /* Farbe ändert sich bei Hover */
+}
+
+
+footer .social-text{
+color: antiquewhite;
+}
+
+
+
 html {
   scroll-padding-top: 80px; /* Höhe der Navbar */
 }
@@ -178,11 +254,20 @@ html {
 
 /* Medienabfragen für kleinere Bildschirme */
 @media (max-width: 768px) {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px; /* Verkleinerte Pfeile */
+    height: 30px;
+  }
 
-  .sidebar{
-        background-color: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(10px);
-     }  
+  .carousel-inner{
+    overflow:hidden;
+    max-width: 100%;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
   .carousel-caption h2 {
       font-size: 1.5rem; /* Kleinere Schriftgröße */
   }
@@ -190,8 +275,61 @@ html {
       font-size: 1rem; /* Kleinere Schriftgröße */
   }
   .carousel {
-      max-height: 50vh; /* Kleinere maximale Höhe für mobile Geräte */
+      max-height: 80vh; /* Kleinere maximale Höhe für mobile Geräte */
   }
+
+  .carousel-indicators {
+    bottom: 10px; /* Verschiebt die Indikatoren nach unten */
+    position: absolute;
+    z-index: 1;
+  }
+
+  .carousel-indicators button {
+    width: 10px; /* Kleinere Indikatoren */
+    height: 10px;
+  }
+
+  .card{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    height: 400px;
+    place-items: center;
+    border-radius: 0;
+    cursor: pointer;
+    margin-top: 100px;
+  }
+  
+  
+  
+  .card-body{
+    margin-top: -30px;
+  
+  padding-left: 1rem;
+  }
+  
+  
+  .card-img-top{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position: relative;
+  
+    left: 10px;
+    top: -80px;
+    object-fit: cover;
+  }
+  
+
+h2{
+  font-size: 2rem; 
+}
+
+h5{
+  font-size: 1.5rem; 
+}
+
 
   iframe{
     width: auto;
@@ -201,26 +339,45 @@ html {
     padding: 2rem;
   }
 
-  .dunkel{
-    padding-top: 2rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-bottom: 4rem;
-   
-    justify-content: center;
-    background-color: black;
-    color:white;
+
+  
+  .card-img-top{
+    left: 10px;
   }
 
   .card-img-top2{
-    left: 95px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left: 10px;
+    top: -80px;
+    object-fit: cover;
   }
 
-  .card-img-top{
-    left: 80px;
+  .social-container {
+    flex-direction: column; /* Symbole und Text untereinander anordnen */
+    align-items: center; /* Zentrieren der Elemente */
+    flex-direction: column;
   }
 
+  .social-icon {
+    font-size: 3rem; /* Kleinere Symbole auf Handys */
+   transform: scale(1.2);
+  }
+
+  .social-text {
+    margin-left: 0; /* Kein Abstand mehr, wenn Text unter dem Symbol */
+    font-size: 1rem; /* Kleinere Schriftgröße für Handys */
+    text-align: center; /* Zentrieren des Textes */
+  }
+
+  .social-container a {
+    margin-bottom: 10px; /* Etwas Abstand nach unten */
+  }
 }
+
+
 
 
 

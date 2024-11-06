@@ -143,47 +143,67 @@ Unsere Praxis liegt in der Dorfmitte des nordfriesischen Dorfs Wester-Ohrstedt. 
 </div>
 
 <br><h2>Momentan bieten wir</h2>
+<div id="carouselExampleDark2" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="3" aria-label="Slide 4"></button> <!-- Neue Schaltfläche für Slide 4 -->
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <div class="card">
+          <img src="images/lightblue.jpeg" class="card-img-top" alt="Krankengymnastik">
+          <div class="card-body">
+            <h5 class="card-title">Krankengymnastik (KG)</h5>
+            <p class="card-text">Mithilfe unserer individuell angepassten Krankengymnastik ermöglichen wir Ihnen schnell in den Alltag zurückzufinden.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="carousel-item" data-bs-interval="2000">
+        <div class="card">
+          <img src="images/violettwhite.jpeg" class="card-img-top" alt="Klassische Massagetherapie">
+          <div class="card-body">
+            <h5 class="card-title">Klassische Massagetherapie (KMT)</h5>
+            <p class="card-text">Verspannte Muskeln oder verklebte Faszien können wir mit klassischer Massagetherapie getrost verabschieden.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="carousel-item" data-bs-interval="3000">
+        <div class="card">
+          <img src="images/orange.jpeg" class="card-img-top" alt="Fango">
+          <div class="card-body">
+            <h5 class="card-title">Fango (FAN)</h5>
+            <p class="card-text">Fango Therapie arbeitet mit einer Art Schlick, die erwämt wird und Ihnen die Muskeln und Seele entspannt.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Neue vierte carousel-item -->
+      <div class="carousel-item">
+        <div class="card"> <!-- h-100 hinzugefügt -->
+            <img src="images/darkgreen.jpeg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Manuelle Lymphdrainage (MD)</h5>
+              <p class="card-text">Wassereinlagerungen können durch gezielte Bewegungen des Therapeuten gelindert werden.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
 
-<div class="container-fluid py-5;">
-
-  <div class="row row-cols-1 row-cols-md-4 g-4 py-5">
-    <div class="col">
-    <div class="card h-90"> <!-- h-100 hinzugefügt -->
-      <img src="images/lightblue.jpeg" class="card-img-top">
-      <div class="card-body">
-        <h5 class="card-title">Krankengymnastik (KG)</h5>
-        <p class="card-text">Mithilfe unserer individuell angepassten Krankengymnastik ermöglichen wir Ihnen schnell in den Alltag zurückzufinden.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-90"> <!-- h-80 hinzugefügt -->
-      <img src="images/violettwhite.jpeg" class="card-img-top">
-      <div class="card-body">
-        <h5 class="card-title">Klassische Massagetherapie (KMT)</h5>
-        <p class="card-text">Verspannte Muskeln oder verklebte Faszien können wir mit klassischer Massagetherapie getrost verabschieden.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-90"> <!-- h-100 hinzugefügt -->
-      <img src="images/orange.jpeg" class="card-img-top">
-      <div class="card-body">
-        <h5 class="card-title">Fango (FAN)</h5>
-        <p class="card-text">Fango Therapie arbeitet mit einer Art Schlick, die erwämt wird und ihnen die Muskeln und Seele entspannt.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-90"> <!-- h-100 hinzugefügt -->
-      <img src="images/darkgreen.jpeg" class="card-img-top">
-      <div class="card-body">
-        <h5 class="card-title">Manuelle Lymphdrainage (MD)</h5>
-        <p class="card-text">Wassereinlagerungen können durch gezielte Bewegungen des Therapeuten gelindert werden.</p>
-      </div>
-    </div>
-  </div>
-  </div>
 
 <br> 
 <div class="border-bottom border-info" style="font-size: 4rem;"></div>
@@ -193,7 +213,7 @@ Unsere Praxis liegt in der Dorfmitte des nordfriesischen Dorfs Wester-Ohrstedt. 
 
 
 <!-- Tipps für Zuhause -->
-<section id="tips">
+<section id="tips"  class=" d-flex flex-column justify-content-center align-items-center fs-1">
   <h2>Tipps für Zuhause</h2>
   <div class="row">
     <div class="col-md-4">
@@ -215,24 +235,31 @@ Unsere Praxis liegt in der Dorfmitte des nordfriesischen Dorfs Wester-Ohrstedt. 
   <br>
   <h5>Weitere Tipps finden Sie auf unseren Kanälen</h5>
   <br>
-  <div class="col">
-
-    <div class="d-flex align-items-center mb-3">
-      <a href=""><i class="bi bi-instagram" style="font-size: 4rem; color: #E1306C;"></i></a>
-      <h5 class="mb-0 ms-2">instagram/PhysiotherapieATLAS</h5>
-    </div>
-
-    <div class="d-flex align-items-center mb-3">
-      <a href=""><i class="bi bi-facebook" style="font-size: 4rem; color: #3b5998;"></i></a>
-      <h5 class="mb-0 ms-2">facebook/PhysiotherapieATLAS</h5>
-    </div>
-
-    <div class="d-flex align-items-center mb-3">
-      <a href=""><i class="bi bi-youtube" style="font-size: 4rem; color: #FF0000;"></i></a>
-      <h5 class="mb-0 ms-2">Youtube/PhysiotherapieATLAS</h5>
-    </div>
-
+ 
+<!-- Facebook Section -->
+<div class="social-container">
+    <a href="https://www.facebook.com/profile.php?id=61568177827177" class="social-icon facebook-icon">
+      <i class="bi bi-facebook"></i>
+    </a>
+    <h5 class="social-text">facebook/PhysiotherapieATLAS</h5>
   </div>
+  
+  <!-- YouTube Section -->
+  <div class="social-container">
+    <a href="https://www.youtube.com/watch?v=ta5QO8DHuDE" class="social-icon youtube-icon">
+      <i class="bi bi-youtube"></i>
+    </a>
+    <h5 class="social-text">Youtube/PhysiotherapieATLAS</h5>
+  </div>
+  
+  <!-- Instagram Section -->
+  <div class="social-container">
+    <a href="https://www.instagram.com/physiotherapieatlas/" class="social-icon instagram-icon">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <h5 class="social-text">instagram/PhysiotherapieATLAS</h5>
+  </div>
+  
 </div>
 <br> 
 <div class="border-bottom border-info" style="font-size: 4rem;"></div>
@@ -243,106 +270,87 @@ Unsere Praxis liegt in der Dorfmitte des nordfriesischen Dorfs Wester-Ohrstedt. 
 
 
 <!--Unser Team-->
-<section id="team">
+<section id="team"  class=" d-flex flex-column justify-content-center align-items-center fs-1">
   <h2>Unser Team</h2>
-  <div class="container-fluid py-5;">
-
-    <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
-      <div class="col">
-        <div class="card h-60" style="height: 400px;">
+  <div class="d-flex justify-content-around">
+        <div class="card">
           <img src="images/darkgreen.jpeg" class="card-img-top2" alt="Noah Osman">
-          <div class="card2-body">
+          <div class="card-body">
             <h5 class="card-title">Noah Osman</h5>
-            <p class="card-text">Unser Bester Mitarbeiter ist Noah Osman, er kann wirklich alles. 
+            <p class="card-text">Unser Bester Mitarbeiter ist Noah Osman, er kann wirklich alles. </p>
               
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card h-60" style="height: 400px;">
-          <img src="images/transparentnoah.png" class="card-img-top2">
-          <div class="card2-body">
-            <h5 class="card-title">Noah Osman</h5>
-            <p class="card-text">Unser Bester Mitarbeiter ist Noah Osman, er kann wirklich alles.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-60" style="height: 400px;">
-          <img src="images/orange.jpeg" class="card-img-top2">
-          <div class="card2-body">
-            <h5 class="card2-title">Noah Osman</h5>
-            <p class="card2-text">Unser Bester Mitarbeiter ist Noah Osman, er kann wirklich alles.</p>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-
-
-  </div>
-
-
 
 
 </section>
 </main> 
 </body>
 <!--Impressum-->
-<div class="dunkel">
-  <section id="impressum">
-    <br>
-    <h2>Impressum</h2>
-    <div class="border-bottom border-white" style="font-size: 4rem;"></div>
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-md-4 d-flex flex-column align-items-center">
-        <img src="images/logotransp.png" width="80" height="80" class="mb-3">
-        <h5>Physiotherapie ATLAS</h5>
-        <br>
-        <h5>Hauptstraße 32</h5>
-        <br>
-        <h5>25885 Wester-Ohrstedt</h5>
-      </div>
-      
-      
-        <div class="col-md-4 d-flex flex-column align-items-center">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2314.5401876645883!2d9.160050277244407!3d54.54160237266004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b37c3dc19b8c3b%3A0xc3fd1063952b8f3a!2sHauptstra%C3%9Fe%2032%2C%2025885%20Wester-Ohrstedt!5e0!3m2!1sde!2sde!4v1728334939405!5m2!1sde!2sde" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
-        </div>
-
-      <div class="col-md-4">
-        <br>
-        <br>
-        <div class="d-flex align-items-center mb-3">
-          <a href=""><i class="bi bi-instagram" style="font-size: 2rem; color: #E1306C;"></i></a>
-          <h5 class="mb-0 ms-2">instagram/PhysiotherapieATLAS</h5>
-        </div>
-  
-        <div class="d-flex align-items-center mb-3">
-          <a href=""><i class="bi bi-facebook" style="font-size: 2rem; color: #3b5998;"></i></a>
-          <h5 class="mb-0 ms-2">facebook/PhysiotherapieATLAS</h5>
-        </div>
-  
-        <div class="d-flex align-items-center mb-3">
-          <a href=""><i class="bi bi-youtube" style="font-size: 2rem; color: #FF0000;"></i></a>
-          <h5 class="mb-0 ms-2">Youtube/PhysiotherapieATLAS</h5>
-        </div>
-      </div>
-      
+<footer class="bg-dark text-white py-5">
+    <!-- Impressum und Datenschutz -->
+    <div class="text-center mb-4">
+      <h2>
+        <a href="/impressum.html" class="text-white text-decoration-none">Impressum</a> | 
+        <a href="/datenschutz.html" class="text-white text-decoration-none">Datenschutz</a>
+      </h2>
+      <div class="border-bottom border-white my-3" style="font-size: 4rem;"></div>
     </div>
-    <br>
-    
-    <br>
-    <br>
-    <h2>Datenschutz</h2>
-    <div class="border-bottom border-white" style="font-size: 4rem;"></div>
-    <br>
-    <br>
-    <p>Es gelten die allgemeinen Datenschutzbestimmungen gemäß §31 oder so ähnlich. Jedenfalls denken wir und hier nichts neues aus.</p>
-  </section>
-  </div>
+  
+    <!-- Footer-Inhalte -->
+    <div class="container">
+      <div class="row text-center">
+        <!-- Unternehmensinformationen -->
+        <div class="col-md-4">
+          <img src="images/logotransp.png" width="80" height="80" class="mb-3" alt="Logo">
+          <h5>Physiotherapie ATLAS</h5>
+          <p>Hauptstraße 32<br>25885 Wester-Ohrstedt</p>
+        </div>
+  
+        <!-- Google Maps -->
+        <div class="col-md-4">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2314.5401876645883!2d9.160050277244407!3d54.54160237266004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b37c3dc19b8c3b%3A0xc3fd1063952b8f3a!2sHauptstra%C3%9Fe%2032%2C%2025885%20Wester-Ohrstedt!5e0!3m2!1sde!2sde!4v1728334939405!5m2!1sde!2sde"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+  
+        <!-- Social Media Links -->
+        <div class="col-md-4">
+          <div class="d-flex flex-column align-items-center">
+            <div class="social-container mb-3">
+              <a href="https://www.instagram.com/physiotherapieatlas/" class="social-icon instagram-icon mb-2">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <h5 class="social-text">instagram/PhysiotherapieATLAS</h5>
+            </div>
+  
+            <div class="social-container mb-3">
+              <a href="https://www.facebook.com/profile.php?id=61568177827177" class="social-icon facebook-icon mb-2">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <h5 class="social-text">facebook/PhysiotherapieATLAS</h5>
+            </div>
+  
+            <div class="social-container">
+              <a href="https://www.youtube.com/watch?v=ta5QO8DHuDE" class="social-icon youtube-icon mb-2">
+                <i class="bi bi-youtube"></i>
+              </a>
+              <h5 class="social-text">youtube/PhysiotherapieATLAS</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Datenschutzhinweis -->
+    <div class="text-center mt-4">
+      <h2>Datenschutz</h2>
+      <div class="border-bottom border-white my-3" style="font-size: 4rem;"></div>
+      <p class="mb-0">Es gelten die allgemeinen Datenschutzbestimmungen gemäß §31 oder so ähnlich. Jedenfalls denken wir hier nichts Neues aus.</p>
+    </div>
+  </footer>
+  
   
 
 </html>
