@@ -1,0 +1,229 @@
+body {
+    background-color: #87CEES;
+  }
+  
+main {
+    padding-top: 8rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 4rem;
+   
+    justify-content: center;
+  }
+
+  .dunkel{
+    padding-top: 4rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 4rem;
+   
+    justify-content: center;
+    background-color: black;
+    color:white;
+  }
+
+  .carousel {
+    max-height: 60vh; /* Maximalhöhe des Carousels */
+    overflow: hidden;  /* Überlauf verstecken */
+}
+
+
+
+.carousel-inner img {
+    max-height: 100%;  /* Bildhöhe auf 100% der Carousel-Höhe beschränken */
+    object-fit: cover;  /* Bild anpassen */
+}
+
+.carousel-caption {
+    position: absolute; /* Position absolut */
+    top: 50%;           /* In der Mitte des Carousels */
+    left: 50%;          /* In der Mitte des Carousels */
+    transform: translate(-50%, -50%); /* Zentrieren */
+    text-align: center; /* Text zentrieren */
+}
+
+
+  h1{
+    text-align: center;
+    font-weight: bolder;
+    
+  }
+ 
+  
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+h5{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+h6{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: darkgreen;
+}
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+  }
+
+a{
+  font-family: 'Lunasima';
+}
+
+.postit {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Zentriert die Kinder horizontal */
+  text-align: center; /* Zentriert den Text */
+  background-color: white;
+}
+
+.note{
+  display: flex;
+
+  align-items: center; /* Zentriert die Kinder horizontal */
+  flex-direction: column;
+
+}
+
+.kleinebox {
+  display: flex; /* Flexbox aktivieren */
+  flex-direction: column; /* Vertikale Anordnung der Kinder */
+  padding: 4rem; /* Weniger Padding für bessere Höhe */
+  margin: 2rem; 
+  background-color: white;
+  border: aqua solid 1px; /* Rahmen mit Breite */
+  border-radius: 5px; /* Abgerundete Ecken */
+}
+
+
+.card{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+  height: 600px;
+  border-radius: 0;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.card2{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+  height: 400px;
+  border-radius: 0;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+
+.card-body{
+  margin-top: -60px;
+padding-left: 2rem;
+}
+
+
+
+.card-body1{
+  height: 150px;
+  margin-top: -60px;
+padding-left: 2rem;
+}
+
+.card-img-top{
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  position: relative;
+  left: 30px;
+  top: -80px;
+  object-fit: cover;
+}
+
+.card-img-top2{
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  position: relative;
+  left: 90px;
+  top: -80px;
+  object-fit: cover;
+}
+
+.card-img-top2:hover{
+  transform: scale(1.24);
+}
+
+.card-img-top:hover{
+  transform: scale(1.24);
+}
+
+html {
+  scroll-padding-top: 80px; /* Höhe der Navbar */
+}
+
+
+
+/* Medienabfragen für kleinere Bildschirme */
+@media (max-width: 768px) {
+  .carousel-caption h2 {
+      font-size: 1.5rem; /* Kleinere Schriftgröße */
+  }
+  .carousel-caption p {
+      font-size: 1rem; /* Kleinere Schriftgröße */
+  }
+  .carousel {
+      max-height: 50vh; /* Kleinere maximale Höhe für mobile Geräte */
+  }
+
+  iframe{
+    width: auto;
+    height: auto;
+  }
+  main{
+    padding: 2rem;
+  }
+
+  .dunkel{
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
+   
+    justify-content: center;
+    background-color: black;
+    color:white;
+  }
+
+  .card-img-top2{
+    left: 95px;
+  }
+
+  .card-img-top{
+    left: 80px;
+  }
+
+}
+
+
+
+
+@media(max-width: 991px){
+    .sidebar{
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+     }
+}
+
