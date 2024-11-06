@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
 main {
@@ -11,16 +12,7 @@ main {
     justify-content: center;
   }
 
-  .dunkel{
-    padding-top: 4rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
-    padding-bottom: 4rem;
-   
-    justify-content: center;
-    background-color: black;
-    color:white;
-  }
+
 
   .carousel {
     max-height: 80vh; /* Maximalhöhe des Carousels */
@@ -58,14 +50,14 @@ main {
  
   
 h2{
-  font-family: Arial, Helvetica, sans-serif;
+
   font-size: 40px;
   font-weight: bold;
 }
 
 
 h5{
-  font-family: Arial, Helvetica, sans-serif;
+ 
   font-size: 25px;
   font-weight: bold;
 }
@@ -330,6 +322,9 @@ h5{
   font-size: 1.5rem; 
 }
 
+    p{
+        font-size: 1rem;
+    }
 
   iframe{
     width: auto;
