@@ -178,6 +178,11 @@ html {
 
 /* Medienabfragen für kleinere Bildschirme */
 @media (max-width: 768px) {
+
+  .sidebar{
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+     }  
   .carousel-caption h2 {
       font-size: 1.5rem; /* Kleinere Schriftgröße */
   }
