@@ -7,6 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lunasima' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/simplelogo" href="images/logostart.jpg" />
     
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -27,67 +30,123 @@
 </head>
 
 <body>
+
+<main>  
 <div class="note">
   
     <br>
 <p>Füllen Sie das untenstehende Formular aus und fügen Sie bitte Ihre abfotografierte Verordnung mit ein. Wir melden uns alsbald zurück.</p>
 
 <br>
+<h2>Kontaktformular</h2>
+<form action="verarbeitung.php" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    <label for="email">E-Mail:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+    <button type="submit">Absenden</button>
+</form>
 
-<form>
+<form action="verarbeitung.php" method="POST">
     <!-- 2 column grid layout with text inputs for the first and last names -->
     <div class="row mb-4">
       <div class="col">
         <div data-mdb-input-init class="form-outline">
-          <input type="text" id="form6Example1" class="form-control" />
-          <label class="form-label" for="form6Example1">Vorname</label>
-        </div>
-      </div>
-      <div class="col">
-        <div data-mdb-input-init class="form-outline">
-          <input type="text" id="form6Example2" class="form-control" />
-          <label class="form-label" for="form6Example2">Nachname</label>
-        </div>
-      </div>
-    </div>
-  
-    <!-- Text input -->
-    <div data-mdb-input-init class="form-outline mb-4">
-      <input type="text" id="form6Example4" class="form-control" />
-      <label class="form-label" for="form6Example4">Addresse</label>
-    </div>
-  
-    <!-- Email input -->
-    <div data-mdb-input-init class="form-outline mb-4">
-      <input type="email" id="form6Example5" class="form-control" />
-      <label class="form-label" for="form6Example5">Email</label>
-    </div>
-  
-    <!-- Number input -->
-    <div data-mdb-input-init class="form-outline mb-4">
-      <input type="number" id="form6Example6" class="form-control" />
-      <label class="form-label" for="form6Example6">Telefonnummer</label>
-    </div>
-  
-    <!-- Diagnose input -->
-    <div class="input-group mb-3">
-        <label class="input-group-text" for="inputGroupFile01">Rezept Upload</label>
-        <input type="file" class="form-control" id="inputGroupFile01">
-      </div>
 
-    <!-- Message input -->
-    <div data-mdb-input-init class="form-outline mb-4">
-      <textarea class="form-control" id="form6Example7" rows="4"></textarea>
-      <label class="form-label" for="form6Example7">Ihre Nachricht (optional)</label>
+          <label for="name">Vorname:</label>
+          <input type="text" id="Vorname name="vorname" required><br><br>
+  
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+  
+          <label for="email">E-Mail:</label>
+          <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Diagnose input -->
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="inputGroupFile01">Rezept Upload</label>
+      <input type="file" class="form-control" id="inputGroupFile01">
     </div>
+  
+          <label for="message">Nachricht (optional):</label>
+          <textarea id="message" name="message"></textarea><br><br>
+         </div>
+      </div>
+      
   
   
     <!-- Submit button -->
-     <a href="okay.html">
-      <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Absenden</button>
+     <a href="okay.html"><button type="submit" class="btn btn-outline-info"> Absenden</button>
       </a>
   </form>
 </div>
+</main>
+
+<footer class="bg-dark text-white py-5">
+  <!-- Impressum und Datenschutz -->
+  <div class="text-center mb-4">
+    <h2>
+      <a href="/impressum.html" class="text-white text-decoration-none">Impressum</a> | 
+      <a href="/datenschutz.html" class="text-white text-decoration-none">Datenschutz</a>
+    </h2>
+    <div class="border-bottom border-white my-3" style="font-size: 4rem;"></div>
+  </div>
+
+  <!-- Footer-Inhalte -->
+  <div class="container">
+    <div class="row text-center">
+      <!-- Unternehmensinformationen -->
+      <div class="col-md-4">
+        <img src="images/logotransp.png" width="80" height="80" class="mb-3" alt="Logo">
+        <h5>Physiotherapie ATLAS</h5>
+        <p>Hauptstraße 32<br>25885 Wester-Ohrstedt</p>
+      </div>
+
+      <!-- Google Maps -->
+      <div class="col-md-4">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2314.5401876645883!2d9.160050277244407!3d54.54160237266004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b37c3dc19b8c3b%3A0xc3fd1063952b8f3a!2sHauptstra%C3%9Fe%2032%2C%2025885%20Wester-Ohrstedt!5e0!3m2!1sde!2sde!4v1728334939405!5m2!1sde!2sde"
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="col-md-4">
+        <div class="d-flex flex-column align-items-center">
+          <div class="social-container mb-3">
+            <a href="https://www.instagram.com/physiotherapieatlas/" class="social-icon instagram-icon mb-2">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <h5 class="social-text">instagram/PhysiotherapieATLAS</h5>
+          </div>
+
+          <div class="social-container mb-3">
+            <a href="https://www.facebook.com/profile.php?id=61568177827177" class="social-icon facebook-icon mb-2">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <h5 class="social-text">facebook/PhysiotherapieATLAS</h5>
+          </div>
+
+          <div class="social-container">
+            <a href="https://www.youtube.com/watch?v=ta5QO8DHuDE" class="social-icon youtube-icon mb-2">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <h5 class="social-text">youtube/PhysiotherapieATLAS</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Datenschutzhinweis -->
+  <div class="text-center mt-4">
+    <h2>Datenschutz</h2>
+    <div class="border-bottom border-white my-3" style="font-size: 4rem;"></div>
+    <p class="mb-0">Es gelten die allgemeinen Datenschutzbestimmungen gemäß §31 oder so ähnlich. Jedenfalls denken wir hier nichts Neues aus.</p>
+  </div>
+</footer>
 
   
 </body>
