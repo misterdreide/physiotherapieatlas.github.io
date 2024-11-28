@@ -12,7 +12,10 @@ main {
     justify-content: center;
   }
 
+.carousel-item2{
+    min-height: 400px; /* Passt das Carousel an die Inhalte an */
 
+}
 
   .dunkel{
     padding-top: 4rem;
@@ -32,28 +35,35 @@ main {
 
 
   .carousel {
-    max-height: 80vh; /* Maximalhöhe des Carousels */
-    overflow: hidden;  /* Überlauf verstecken */
+    max-height: 80vh; /* Maximale Höhe des Carousels */
+    overflow: hidden; /* Überflüssige Inhalte ausblenden */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
 
 .carousel-inner img {
-    max-height: 100%;  /* Bildhöhe auf 100% der Carousel-Höhe beschränken */
-    object-fit: cover;  /* Bild anpassen */
+    height: 100%; /* Bildhöhe anpassen */
+    width: auto; /* Breite proportional skalieren */
+    object-fit: cover; /* Bild ausfüllen, ohne Verzerrung */
+    margin-top: 150px;
 }
+
+
+
 
 .carousel-caption {
     position: absolute; /* Position absolut */
     top: 50%;           /* In der Mitte des Carousels */
     left: 50%;          /* In der Mitte des Carousels */
-    transform: translate(-50%, -50%); /* Zentrieren */
+    transform: translate(-50%, -10%); /* Zentrieren */
     text-align: center; /* Text zentrieren */
 }
 
 .card-title{
  font-size: 25px;
 }
+
 .card-text{
   font-size: 20px;
 }
@@ -115,12 +125,13 @@ a{
 
 
 .postit {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Zentriert die Kinder horizontal */
-  text-align: center; /* Zentriert den Text */
-  background-color: rgb(83, 236, 241);
+  background: linear-gradient(to bottom, #000000, #9ce1f81c); /* HEX-Werte für Grau und Hellblau */
+
+  background-size: cover; /* Skaliert das Bild, um den Bereich auszufüllen */
+    background-position: center; /* Zentriert das Bild */
+    background-repeat: no-repeat; /* Kein Wiederholen des Bildes */
 }
+
 
 .note{
   display: flex;
@@ -287,13 +298,26 @@ html {
     width: 30px; /* Verkleinerte Pfeile */
     height: 30px;
   }
-  
+
   .carousel {
-    height: 70vh; /* Maximalhöhe des Carousels */
-    overflow: hidden;  /* Überlauf verstecken */
+    height: 50vh; /* Maximalhöhe des Carousels */
+    overflow: hidden; /* Alles, was überläuft, verstecken */
 }
+
 .carousel-item {
-  min-height: 400px; /* Passt das Carousel an die Inhalte an */
+    height: 100%; /* Carousel-Items übernehmen die volle Höhe */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.carousel-item img {
+    width: 100%; /* Bild füllt die Breite des Containers */
+    height: 100%; /* Bild füllt die Höhe des Containers */
+    object-fit: cover; /* Bild füllt den Bereich aus und schneidet Überflüssiges ab */
+    object-position: center; /* Das Bild wird zentriert */
+    
 }
 
 
@@ -301,10 +325,7 @@ html {
   display: block;
   z-index: 10;
 }
-  .carousel-inner{
-    overflow:hidden;
-    max-width: 100%;
-  }
+ 
   .text-container h2 {
     font-size: 1.5rem; /* Kleinere Schriftgröße */
   }
