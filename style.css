@@ -1,5 +1,6 @@
 body {
     background-color: white;
+   
   }
   
 main {
@@ -11,6 +12,8 @@ main {
     justify-content: center;
   }
 
+
+
   .dunkel{
     padding-top: 4rem;
     padding-left: 8rem;
@@ -21,6 +24,12 @@ main {
     background-color: black;
     color:white;
   }
+
+  .navbar-nav .nav-link:hover {
+    color: lightblue;
+    text-decoration: underline;
+  }
+
 
   .carousel {
     max-height: 80vh; /* Maximalhöhe des Carousels */
@@ -66,7 +75,7 @@ h2{
 
 h5{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -86,12 +95,31 @@ a{
   font-family: 'Lunasima';
 }
 
+/* Container für das Video, damit es sich richtig verhält */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Verhältnis 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 .postit {
   display: flex;
   flex-direction: column;
   align-items: center; /* Zentriert die Kinder horizontal */
   text-align: center; /* Zentriert den Text */
-  background-color: white;
+  background-color: rgb(83, 236, 241);
 }
 
 .note{
@@ -144,7 +172,7 @@ padding-left: 2rem;
 }
 
 .card-img-top{
-  border-radius: 50%;
+ 
   height: 250px;
   width: 250px;
   position: relative;
@@ -259,11 +287,50 @@ html {
     width: 30px; /* Verkleinerte Pfeile */
     height: 30px;
   }
+  
+  .carousel {
+    height: 70vh; /* Maximalhöhe des Carousels */
+    overflow: hidden;  /* Überlauf verstecken */
+}
+.carousel-item {
+  min-height: 400px; /* Passt das Carousel an die Inhalte an */
+}
 
+
+.carousel-caption{
+  display: block;
+  z-index: 10;
+}
   .carousel-inner{
     overflow:hidden;
     max-width: 100%;
   }
+  .text-container h2 {
+    font-size: 1.5rem; /* Kleinere Schriftgröße */
+  }
+
+  .text-container p {
+    font-size: 1rem; /* Kleinere Schriftgröße */
+  }
+
+  .carousel-caption {
+    bottom: 20%; /* Text höher positionieren */
+  }
+
+  .map-container {
+    bottom: -20%; /* Verschiebt die Karte vertikal nach unten */
+    width: 80%; /* Breite der Karte */
+    max-width: 600px; /* Optional: maximale Breite */
+    height: 400px; /* Höhe der Karte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Position innerhalb des Carousel-Bereichs */
+    left: 50%; /* Horizontal zentrieren */
+    transform: translate(-50%, 0); /* Exakte Zentrierung */
+    margin: 0; /* Sicherheitsmaßnahme gegen ungewollte Margins */
+}
+
 
   .carousel-caption h5 {
     font-size: 1.2rem;
@@ -304,14 +371,14 @@ html {
   
   
   .card-body{
-    margin-top: -30px;
+    margin-top: -70px;
   
   padding-left: 1rem;
   }
   
   
   .card-img-top{
-    border-radius: 50%;
+    
     height: 100px;
     width: 100px;
     position: relative;
@@ -331,14 +398,33 @@ h5{
 }
 
 
-  iframe{
-    width: auto;
-    height: auto;
-  }
+/* Sicherstellen, dass das Video im Container bleibt und sich anpasst */
+iframe {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border: none;
+}
+
   main{
     padding: 2rem;
   }
 
+
+/* Karte ganz unten auf dem Bild */
+.map-container {
+  
+  width: 80%; /* Breite der Karte verringert */
+  max-width: 100px; /* Maximale Breite der Karte */
+  height: 50px; /* Höhe der Karte verringert */
+}
+
+/* iframe für die Google Map */
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 
   
   .card-img-top{
@@ -384,7 +470,7 @@ h5{
 
 @media(max-width: 991px){
     .sidebar{
-        background-color: rgba(255, 255, 255, 0.15);
+        background-color: rgba(27, 27, 27, 0.35);
         backdrop-filter: blur(10px);
      }
 }
