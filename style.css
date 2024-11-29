@@ -112,7 +112,7 @@ a{
   height: 0;
   overflow: hidden;
   max-width: 100%;
-  background: #000;
+  /*background: #000; */
 }
 
 .video-container iframe {
@@ -121,6 +121,13 @@ a{
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.chip-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Bild skaliert, um den Bereich auszufüllen */
 }
 
 
@@ -132,23 +139,41 @@ a{
     background-repeat: no-repeat; /* Kein Wiederholen des Bildes */
 }
 
-
-.note{
+.note {
   display: flex;
-
-  align-items: center; /* Zentriert die Kinder horizontal */
+  align-items: center;
   flex-direction: column;
-
+  max-width: 100%; /* Begrenze die Breite auf 100% des Viewports */
+  margin: 0 auto; /* Zentriere den Container */
+  padding: 1rem; /* Abstand innen */
 }
 
+
 .kleinebox {
-  display: flex; /* Flexbox aktivieren */
-  flex-direction: column; /* Vertikale Anordnung der Kinder */
-  padding: 4rem; /* Weniger Padding für bessere Höhe */
-  margin: 2rem; 
+  display: flex;                 /* Flexbox aktivieren */
+  flex-direction: column;        /* Vertikale Anordnung der Kinder */
+  padding: 1rem;                 /* Weniger Padding für bessere Anpassung */
+  margin: 1rem;                  /* Etwas weniger Margin, damit es nicht überläuft */
+  background-color: white;       /* Hintergrundfarbe Weiß */
+  border: aqua solid 1px;        /* Ein dünner blauer Rahmen */
+  border-radius: 10px;           /* Abgerundete Ecken */
+  box-sizing: border-box;        /* Stellt sicher, dass Padding und Border in der Boxgröße enthalten sind */
+  max-width: 100%;               /* Maximal 100% der Breite */
+  flex-grow: 1;                  /* Ermöglicht der Box, sich innerhalb eines flex-Containers auszudehnen */
+}
+
+
+.box { position: relative; /* Referenz für das absolut positionierte Bild */
+  display: flex; /* Ermöglicht flexibles Layout */
+  justify-content: center; /* Zentriert den Inhalt horizontal */
+  align-items: center; /* Zentriert den Inhalt vertikal */
+  width: 300px; /* Beispielbreite */
+  height: 300px; /* Beispielhöhe */
+  padding: 1rem; /* Innenabstand */
   background-color: white;
-  border: aqua solid 1px; /* Rahmen mit Breite */
-  border-radius: 5px; /* Abgerundete Ecken */
+  border: 1px solid aqua;
+  border-radius: 5px;
+  overflow: hidden; /* Verhindert, dass Inhalte über den Rahmen hinausgehen */
 }
 
 
@@ -491,7 +516,7 @@ iframe {
 
 @media(max-width: 991px){
     .sidebar{
-        background-color: rgba(27, 27, 27, 0.35);
+        background-color: rgba(27, 27, 27, 0.603);
         backdrop-filter: blur(10px);
      }
 }
