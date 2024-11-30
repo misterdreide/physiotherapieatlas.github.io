@@ -264,6 +264,12 @@ padding-left: 2rem;
   color: #333; /* Textfarbe */
 }
 
+
+/* Email Symbol */
+.email-icon {
+  color: #010307; /* Vielleicht Schwarz? */
+}
+
 /* Facebook Symbol */
 .facebook-icon {
   color: #3b5998; /* Typische Facebook-Blau-Farbe */
@@ -292,6 +298,15 @@ footer {
   text-align:justify; /* Zentriert den Text */
  
 }
+.footer-link {
+  color: #ffffff; /* Weiß */
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #92d5eb; 
+}
+
 
 footer a{
   color: antiquewhite;
@@ -300,7 +315,7 @@ footer a{
 
 footer a:hover {
  
-  color:lightblue; /* Farbe ändert sich bei Hover */
+  color:#92d5eb; /* Farbe ändert sich bei Hover */
 }
 
 
