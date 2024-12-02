@@ -4,10 +4,10 @@ body {
   }
   
 main {
-    padding-top: 8rem;
+    padding-top: 6rem;
     padding-left: 8rem;
     padding-right: 8rem;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
    
     justify-content: center;
   }
@@ -331,6 +331,29 @@ html {
 
 
 
+form {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 20px auto;
+}
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+  display: none; /* Versteckt die Fehlermeldung standardmäßig */
+}
+
+
 /* Medienabfragen für kleinere Bildschirme */
 @media (max-width: 768px) {
   .carousel-control-prev-icon,
@@ -470,7 +493,9 @@ iframe {
   main{
     padding: 2rem;
   }
-
+p{
+ font-size: 1.5rem;
+}
 
 /* Karte ganz unten auf dem Bild */
 .map-container {
