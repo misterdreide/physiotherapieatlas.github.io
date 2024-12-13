@@ -12,7 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lunasima' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="images/simplelogo" href="images/logostart.jpg" />
-    <title>Physiotherapie ATLAS</title>
+    <title>Physiotherapie Atlas</title>
   </head>
   <body class="overflow-auto">
 
@@ -25,7 +25,7 @@
         
         <!--Logo-->
         <a class="navbar-brand fs-4" href="#"><img src="images/logotransp.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-bottom">
-              Physiotherapie ATLAS
+              Physiotherapie Atlas
             </a>
  
         <!--Toggle Btn-->
@@ -47,14 +47,12 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#ziel">Ziel</a>
+                <a class="nav-link" href="#ziel">Willkommen</a>
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link" href="#team">Team</a>
               </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#angebot">Angebot</a>
-              </li>
+            
               <li class="nav-item mx-2">
                 <a class="nav-link" href="#tips">Tipps</a>
               </li>
@@ -73,7 +71,26 @@
         </div>
       </div>
     </nav>
+<!-- Cookie-Banner -->
+<div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #f8f9fa; padding: 10px; box-shadow: 0 -2px 5px rgba(0,0,0,0.2); z-index: 1000; text-align: center; font-size: 14px;">
+  <p style="margin: 0;">
+      Diese Website verwendet Bootstrap, FontAwesome und Google Fonts, um eine bessere Darstellung zu ermöglichen. 
+      Dabei handelt es sich um Dienste von Drittanbietern, die möglicherweise Daten wie Ihre IP-Adresse verarbeiten. 
+      Wir arbeiten mit Hochdruck daran, die Website benutzerfreundlicher zu gestalten. Weitere Informationen finden Sie in unserer 
+      <a href="datenschutz.html" style="color: #007bff; text-decoration: underline;">Datenschutzerklärung</a>.
+  </p>
+  <button id="accept-cookies" style="margin-top: 10px; background-color: #007bff; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer;">
+      Akzeptieren
+  </button>
+</div>
 
+<!-- JavaScript für den Cookie-Banner -->
+<script>
+  document.getElementById('accept-cookies').addEventListener('click', function() {
+      document.getElementById('cookie-banner').style.display = 'none';
+      // Optional: Hier kannst du Cookies setzen oder in localStorage speichern, dass die Zustimmung gegeben wurde
+  });
+</script>
 
    <!--Home Section/ Caroussel -->
    <section id="#" class=" d-flex flex-column justify-content-center align-items-center fs-1">
@@ -90,15 +107,17 @@
             <div class="carousel-caption">
               <div class="text-container">
                
-              <h2>Physiotherapie ATLAS</h2>
+              <h2>Herzlich Willkommen </h2>
+
+               <p>-Physiotherapie Atlas in Wester-Ohrstedt-</p>
             <br>
               </div>
-          
+          <!--
           <div class="map-container">
             
          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2314.5401876645883!2d9.160050277244407!3d54.54160237266004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b37c3dc19b8c3b%3A0xc3fd1063952b8f3a!2sHauptstra%C3%9Fe%2032%2C%2025885%20Wester-Ohrstedt!5e0!3m2!1sde!2sde!4v1728334939405!5m2!1sde!2sde"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
         </div>
-   
+   -->
         </div>
           </div>
         
@@ -132,18 +151,18 @@
 <section id="ziel" class=" d-flex flex-column justify-content-center align-items-center fs-1">
 
   <div class="container-fluid">
-    <h2>Unser Ziel</h2>
+    <h2>Herzlich Willkommen</h2>
     <br>
     <div class="row">
       <div class="col-md-7">
 <p>
-  Wir helfen Ihnen Ihre Schmerzen zu lindern und Ihre gesundheitliche Verfassung zu verbessern!
+Wir helfen Ihnen Ihre Schmerzen zu lindern und Ihre gesundheitliche Verfassung zu verbessern!
 </p>
 <p>
 Unsere Praxis liegt in der Dorfmitte von Wester-Ohrstedt neben einem gemütlichem Café EDEKA Schmidt. 
 </p>
 <p>Der Zugang ist barrierefrei. </p>
-<p> Wir freuen uns auf Ihren Besuch!</p>
+<p> Sichern Sie sich schon jetzt einen Termin! Wir freuen uns auf Ihren Besuch!</p>
 
 </div>
 <div class="col-md-5">
@@ -157,7 +176,7 @@ Unsere Praxis liegt in der Dorfmitte von Wester-Ohrstedt neben einem gemütliche
 </div>
 
 </div>
-<a href="termin.html" class="px-3 py-1"><button type="button" class="btn btn-outline-info">Jetzt Termin anfragen</button></a>
+<a href="termin.html" class="px-3 py-1"><button type="button" class="btn btn-info">Jetzt Termin anfragen</button></a>
              
 </div>
 </div>
@@ -177,7 +196,7 @@ Unsere Praxis liegt in der Dorfmitte von Wester-Ohrstedt neben einem gemütliche
           <img src="images/darkgreen.jpeg" class="card-img-top2" alt="Noah Osman">
           <div class="card-body">
             <h5 class="card-title">Karim Osman</h5>
-            <p class="card-text">Karim ist staatlich geprüfter Physiotherapeut mit Leib und Seele. Neben seiner Zusatzqulifikation für manuelle Lymphdrainage ist er auch angehender Osteopath und Heilpraktiker.</p>
+            <p class="card-text">Karim ist staatlich geprüfter Physiotherapeut und in Ausbildung zum Osteopathen.</p>
               
           </div>
         </div>
@@ -187,65 +206,22 @@ Unsere Praxis liegt in der Dorfmitte von Wester-Ohrstedt neben einem gemütliche
 </section>
 
 
-<section id="angebot" class=" d-flex flex-column justify-content-center align-items-center fs-1">
-  <div class="container-fluid">
-  <br><h2>Unser Angebot</h2>
-  </div>
-            <div class="card">
-            <img src="images/lightblue.jpeg" class="card-img-top" alt="Krankengymnastik">
-            <div class="card-body">
-              <h5 class="card-title">Krankengymnastik (KG)</h5>
-              <p class="card-text">Hier kommt eine supertolle Beschreibung hin.</p>
-            </div>
-          </div>
-        
-    
-      
-          <div class="card">
-            <img src="images/violettwhite.jpeg" class="card-img-top" alt="Klassische Massagetherapie">
-            <div class="card-body">
-              <h5 class="card-title">Klassische Massagetherapie (KMT)</h5>
-              <p class="card-text">Hier kommt eine supertolle Beschreibung hin.</p>
-            </div>
-          </div>
-       
-    
-       <div class="card">
-            <img src="images/orange.jpeg" class="card-img-top" alt="Fango">
-            <div class="card-body">
-              <h5 class="card-title">Wärmetherapie (WT)</h5>
-              <p class="card-text">Früher auch Fango genannt, arbeitet mit einer Art Schlick, die erwämt wird und Ihnen die Muskeln und Seele entspannt.</p>
-            </div>
-          </div>
-  
-    
-          <div class="card"> <!-- h-100 hinzugefügt -->
-              <img src="images/darkgreen.jpeg" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Manuelle Lymphdrainage (MLD)</h5>
-                <p class="card-text">Wassereinlagerungen können durch gezielte Bewegungen des Therapeuten gelindert werden.</p>
-              </div>
-        </div>
-  
-  <br>
 
-
-</section> 
 
 <!-- Tipps für Zuhause -->
 <section id="tips"  class=" d-flex flex-column justify-content-center align-items-center fs-1">
   <div class="container-fluid">
   <h2>Tipps für Zuhause</h2>
   
-  </div>
- <div class="row">
-<div class="box">
 
-  <img src="images/soon.png" class="chip-img" alt="Coming Soon">
+ <div class="row">
+  <div class="col-md-7">
+<br>
+  <p>Hier arbeiten wir aktuell noch dran. In Zukunft finden Sie hier Übungen und hilfreiche Tipps, um Ihre Gesundheit eigenständig verbessern zu können.</p>
  
 </div>
 </div>
-
+</div>
 <!--
   <div class="row">
     <div class="col-md-4">
@@ -274,33 +250,18 @@ Unsere Praxis liegt in der Dorfmitte von Wester-Ohrstedt neben einem gemütliche
   <br>
  </div>
  <div class="social-container">
-  <a href="mailto:misterdreide@gmail.com" class="social-icon email-icon">
+  <a href="mailto:k.osman@yahoo.com" class="social-icon email-icon">
     <i class="bi bi-envelope"></i>
   </a>
-  <h5 class="social-text">Email an musteremail.com</h5>
+  <h5 class="social-text">Email an k.osman@yahoo.com</h5>
  </div>
-<!-- Facebook Section -->
-<div class="social-container">
-    <a href="https://www.facebook.com/profile.php?id=61568177827177" class="social-icon facebook-icon">
-      <i class="bi bi-facebook"></i>
-    </a>
-    <h5 class="social-text">facebook/PhysiotherapieATLAS</h5>
-  </div>
-  
-  <!-- YouTube Section -->
-  <div class="social-container">
-    <a href="https://www.youtube.com/watch?v=ta5QO8DHuDE" class="social-icon youtube-icon">
-      <i class="bi bi-youtube"></i>
-    </a>
-    <h5 class="social-text">Youtube/PhysiotherapieATLAS</h5>
-  </div>
-  
+
   <!-- Instagram Section -->
   <div class="social-container">
     <a href="https://www.instagram.com/physiotherapieatlas/" class="social-icon instagram-icon">
       <i class="bi bi-instagram"></i>
     </a>
-    <h5 class="social-text">instagram/PhysiotherapieATLAS</h5>
+    <h5 class="social-text">instagram/PhysiotherapieAtlas</h5>
   </div>
 
 </div>
@@ -327,18 +288,10 @@ Unsere Praxis liegt in der Dorfmitte von Wester-Ohrstedt neben einem gemütliche
         <!-- Unternehmensinformationen -->
         <div class="col-md-4">
           <img src="images/logotransp.png" width="80" height="80" class="mb-3" alt="Logo">
-          <h4>Physiotherapie ATLAS</h4>
+          <h4>Physiotherapie Atlas</h4>
           <p>Hauptstraße 32<br>25885 Wester-Ohrstedt</p>
         </div>
   
-        <!-- Google Maps -->
-        <div class="col-md-4">
-          
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2314.5401876645883!2d9.160050277244407!3d54.54160237266004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b37c3dc19b8c3b%3A0xc3fd1063952b8f3a!2sHauptstra%C3%9Fe%2032%2C%2025885%20Wester-Ohrstedt!5e0!3m2!1sde!2sde!4v1728334939405!5m2!1sde!2sde"
-            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        
-        </div>
   
         <!-- Social Media Links -->
         <div class="col-md-4">
@@ -347,29 +300,16 @@ Unsere Praxis liegt in der Dorfmitte von Wester-Ohrstedt neben einem gemütliche
               <a href="https://www.instagram.com/physiotherapieatlas/" class="social-icon instagram-icon mb-2">
                 <i class="bi bi-instagram"></i>
               </a>
-              <h5 class="social-text">instagram/PhysiotherapieATLAS</h5>
+              <h5 class="social-text">instagram/PhysiotherapieAtlas</h5>
             </div>
   
-            <div class="social-container mb-3">
-              <a href="https://www.facebook.com/profile.php?id=61568177827177" class="social-icon facebook-icon mb-2">
-                <i class="bi bi-facebook"></i>
-              </a>
-              <h5 class="social-text">facebook/PhysiotherapieATLAS</h5>
-            </div>
-  
-            <div class="social-container">
-              <a href="https://www.youtube.com/watch?v=ta5QO8DHuDE" class="social-icon youtube-icon mb-2">
-                <i class="bi bi-youtube"></i>
-              </a>
-              <h5 class="social-text">youtube/PhysiotherapieATLAS</h5>
-            </div>
           </div>
         </div>
       </div>
     </div>
   
   </footer>
-  
+
   
 
 </html>
