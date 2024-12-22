@@ -12,7 +12,9 @@ html,body{
     height: 100%;
    
 }
-
+p {
+    line-height: 1.5; /* Einfacher Zeilenabstand */
+  }
 
 
 header {
@@ -308,11 +310,6 @@ header {
     align-items: center;       /* Vertikal zentrieren */
 }
 
-footer {
-    background-color: #f8f9fa; /* Heller Hintergrund, kannst du anpassen */
-    padding: 20px 0; /* Abstand oben und unten */
-    text-align: center; /* Zentriere den Text standardmäßig */
-}
 
 .row {
     display: flex; /* Verwende Flexbox für horizontale Ausrichtung */
@@ -323,7 +320,7 @@ footer {
 
 
 .col h1 {
-    font-size: 16px; /* Passe die Schriftgröße an */
+    font-size: 1.5rem; /* Passe die Schriftgröße an */
     margin: 0; /* Entferne Standardabstände */
 }
 
@@ -386,13 +383,67 @@ footer {
 .contact-item a:hover {
     text-decoration: underline;
 }
+footer {
+    background-color: #e4eeec;
+    padding: 60px;
+    color: #333;
+  }
+
+  .footer-links {
+    text-decoration: none; /* Entfernt den Unterstrich von den Links */
+    color: #333; /* Textfarbe für Links */
+    padding-bottom: 20px; /* Etwas Platz unter dem Text */
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ccc; /* Grauer Strich unter dem Link */
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; /* Damit die Spalten auf kleineren Bildschirmen umbrechen können */
+    font-size: 14px;
+    gap: 20px; /* Abstand zwischen den Spalten */
+  }
+
+.footer-col {
+    flex: 1 1 30%; /* Jede Spalte nimmt 30% der Breite ein */
+    min-width: 250px; /* Minimale Breite, um eine zu kleine Darstellung zu vermeiden */
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .footer-info {
+    margin-bottom: 20px;
+  }
+  .footer-info h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-top: 60px;
+  }
+  .footer-links a {
+    margin: 0 10px;
+    color: #555;
+    text-decoration: none;
+  }
+  .footer-links a:hover {
+    color: #000;
+  }
+  
 
 
-.footer .col a:hover {
-    background-color: #56e2f5ea; /* Hover-Effekt: Ändert die Hintergrundfarbe */
-    color: rgb(0, 0, 0); /* Textfarbe bei Hover */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    transition: opacity 1.5s ease-out 0.5s, transform 1.0s ease-out 0.5s;
 }
 
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 
@@ -504,6 +555,31 @@ footer {
         max-width: 100%;
         max-height: auto;
     }
+
+    .wrapper {
+        display: flex;
+        height: 300px;
+        width: 200px;
+        position: relative;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+    }
+
+    .col h1 {
+        font-size: 1.2rem; /* Passe die Schriftgröße an */
+        margin: 0; /* Entferne Standardabstände */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Auf mobilen Geräten stapeln sich die Spalten */
+        align-items: center;
+      }
+    
+      .footer-col {
+        width: 100%; /* Jede Spalte nimmt nun die volle Breite des Containers ein */
+        margin-bottom: 20px; /* Abstand zwischen den gestapelten Spalten */
+      }
+
 }
 
 /* Für sehr kleine Bildschirme (z.B. Handys) */

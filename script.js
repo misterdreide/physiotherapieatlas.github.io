@@ -28,4 +28,25 @@ document.querySelectorAll('.wrapper .card').forEach(card => {
     });
 });
 
+// Funktion: Elemente anzeigen, wenn sie sichtbar werden
+function revealOnScroll() {
+    const elements = document.querySelectorAll('.scroll-animate');
+
+    elements.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        const inView = rect.top < window.innerHeight && rect.bottom > 0;
+
+        if (inView) {
+            el.classList.add('show'); // Animation starten
+        } else {
+            el.classList.remove('show'); // Zurücksetzen (optional)
+        }
+    });
+}
+
+// Event-Listener für das Scrollen
+window.addEventListener('scroll', revealOnScroll);
+
+// Initial aufrufen, damit Elemente auch ohne Scroll sichtbar werden
+revealOnScroll();
 
