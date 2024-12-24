@@ -316,7 +316,6 @@ header {
     justify-content: center; /* Zentriere die Elemente horizontal */
     align-items: center; /* Zentriere die Elemente vertikal */
     gap: 10px; /* Abstand zwischen den Spalten */
-    padding: 20px;
 }
 
 
