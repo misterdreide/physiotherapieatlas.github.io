@@ -383,6 +383,16 @@ header {
 .contact-item a:hover {
     text-decoration: underline;
 }
+
+.boxy {
+    margin-bottom: 20px;
+  }
+  .boxy p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-top: 60px;
+  }
+
 footer {
     background-color: #e4eeec;
     padding: 60px;
