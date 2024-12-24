@@ -565,6 +565,12 @@ footer {
         perspective: 1000px;
     }
 
+    .row{
+        width: 60%;
+    }
+    .col{
+        padding: 15px;
+    }
     .col h1 {
         font-size: 1.2rem; /* Passe die Schriftgröße an */
         margin: 0; /* Entferne Standardabstände */
