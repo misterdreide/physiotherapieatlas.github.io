@@ -316,6 +316,7 @@ header {
     justify-content: center; /* Zentriere die Elemente horizontal */
     align-items: center; /* Zentriere die Elemente vertikal */
     gap: 10px; /* Abstand zwischen den Spalten */
+    padding: 20px;
 }
 
 
@@ -565,10 +566,7 @@ footer {
         perspective: 1000px;
     }
 
-    .row{
-        width: 60%;
-    }
-
+   
     .col h1 {
         font-size: 1.2rem; /* Passe die Schriftgröße an */
         margin: 0; /* Entferne Standardabstände */
