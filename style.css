@@ -565,11 +565,20 @@ footer {
         perspective: 1000px;
     }
 
-   
-    .col h1 {
-        font-size: 1.2rem; /* Passe die Schriftgröße an */
-        margin: 0; /* Entferne Standardabstände */
+    .row {
+        flex-direction: column; /* Stapel die Elemente vertikal */
+        align-items: center; /* Zentriere die Elemente */
     }
+
+    .col h1 {
+        font-size: 1.5rem; /* Verkleinere die Schriftgröße */
+        margin: 10px 0; /* Abstand zwischen den Elementen */
+    }
+
+   /* .col h1 { */
+      /*  font-size: 1.2rem;  Passe die Schriftgröße an */
+       /* margin: 0;  Entferne Standardabstände */
+  /*  } */
 
     .footer-container {
         flex-direction: column; /* Auf mobilen Geräten stapeln sich die Spalten */
