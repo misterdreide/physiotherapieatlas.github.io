@@ -15,22 +15,97 @@
     <link rel="stylesheet" type="text/css" href="style.css"> 
     </head>
     <body>
-        <script type="text/javascript" src="https://form.jotform.com/jsform/243374307613353"></script>
+        <!-- Cookie-Banner -->
+        <div id="cookie-banner" style="
+        position: fixed; 
+        bottom: 0; 
+        left: 0; 
+        width: 100%; 
+        background: #f8f9fa; 
+        padding: 20px 0; 
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+        z-index: 9999; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column;">
+        
+        <p style="
+            margin: 0 0 10px; 
+            padding: 0 10px; 
+            color: #333; 
+            text-align: center; 
+            max-width: 80%; 
+            font-size: 18px;">
+            Um Ihnen das Formular anzuzeigen, verwenden wir einen Drittanbieter. Hierfür werden Cookies geladen. 
+            <a href="datenschutz.html" target="_blank" style="color: #007bff; text-decoration: underline;">Mehr erfahren</a>
+        </p>
+    
+        <button id="cookie-accept" style="
+            background: #007bff; 
+            color: #fff; 
+            border: none; 
+            padding: 10px 20px; 
+            cursor: pointer; 
+            margin: 50px;
+            border-radius: 6px; 
+            font-size: 20px;">
+            Cookies akzeptieren
+        </button>
+    </div>
+    
 
+        <!-- Formular-Platzhalter -->
+        <div id="form-placeholder" style="display: none;"></div>
+    
+        <!-- Hinweise -->
         <div class="schiff">
             <h1>Hinweise</h1>
-           </div>
-           <div class="schiff">
-    <img src="images/Heilmittel.png" class="chip-img" alt="Hinweise"  width="400px" height="auto">
-</div>
-<div class="schif">
-  <p> Dieses Bild stammt aus der Website der Kassenärztlichen Vereinigung und wurde mit Canva zur Verdeutlichung bearbeitet.</p>
-  <a href="https://www.kbv.de/media/sp/Muster_13.pdf" style="color: #6499e4;">https://www.kbv.de/media/sp/Muster_13.pdf</a>
-
-
         </div>
+        <div class="schiff">
+            <img src="images/Heilmittel.png" class="chip-img" alt="Hinweise" width="400px" height="auto">
+        </div>
+        <div class="schif">
+            <p>Dieses Bild stammt aus der Website der Kassenärztlichen Vereinigung und wurde mit Canva zur Verdeutlichung bearbeitet.</p>
+            <a href="https://www.kbv.de/media/sp/Muster_13.pdf" style="color: #6499e4;">https://www.kbv.de/media/sp/Muster_13.pdf</a>
+        </div>
+    
+        <!-- Skript -->
+        <script>
+            // Funktion zum Laden des Formulars
+            function loadForm() {
+                const formScript = document.createElement("script");
+                formScript.type = "text/javascript";
+                formScript.src = "https://form.jotform.com/jsform/243374307613353";
+                document.getElementById("form-placeholder").appendChild(formScript);
+                document.getElementById("form-placeholder").style.display = "block";
+            }
+        
+            // DOMContentLoaded, um sicherzustellen, dass das DOM geladen ist
+            document.addEventListener("DOMContentLoaded", function () {
+                const cookieBanner = document.getElementById("cookie-banner");
+                const formPlaceholder = document.getElementById("form-placeholder");
+                const acceptButton = document.getElementById("cookie-accept");
+                const cookieName = "cookieConsent";
+        
+                // Überprüfen, ob das Cookie gesetzt ist
+                if (!document.cookie.split("; ").find((row) => row.startsWith(cookieName))) {
+                    cookieBanner.style.display = "block"; // Cookie-Banner anzeigen, wenn kein Cookie vorhanden ist
+                } else {
+                    loadForm(); // Formular direkt laden, wenn Cookie existiert
+                }
+        
+                // Event-Listener für den Button
+                acceptButton.addEventListener("click", function () {
+                    document.cookie = `${cookieName}=true; path=/; max-age=${60 * 60 * 24 * 365}`; // Cookie setzen
+                    cookieBanner.style.display = "none"; // Cookie-Banner ausblenden
+                    loadForm(); // Formular nach Zustimmung laden
+                });
+            });
+        </script>
+        
     </body>
-
+    
     <footer>
         <div class="footer-links">
        <div class="row">
