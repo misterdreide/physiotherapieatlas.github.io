@@ -11,6 +11,11 @@
         <priority>0.80</priority>
     </url>
     <url>
+        <loc>https://www.physiotherapieatlas.de/termin.html</loc>
+        <lastmod>2025-01-09</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
         <loc>https://www.physiotherapieatlas.de/impressum.html</loc>
         <lastmod>2025-01-09</lastmod>
         <priority>0.50</priority>
