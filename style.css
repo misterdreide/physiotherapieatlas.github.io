@@ -239,7 +239,7 @@ header {
 .gallery__card{
     position: relative;
     width: 450px;
-    height: 300px;
+    height: 280px;
     border-radius: 3rem;
     margin-left: auto;
     margin-right: auto;
@@ -279,7 +279,7 @@ header {
 }
 
 .gallery__title, .gallery__subtitle{
-    color: #7ebbf8;
+    color: rgb(135, 246, 250);
     font-weight: 500;
 }
 
