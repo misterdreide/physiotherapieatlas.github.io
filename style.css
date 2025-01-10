@@ -825,7 +825,7 @@ footer {
 }
 
 /* Für sehr kleine Bildschirme (z.B. Handys) */
-@media(max-width: 570px) {
+@media (max-width: 768px)  {
     .hero {
         height: 100vh;
     }
@@ -835,10 +835,44 @@ footer {
         width: 300px;
         margin-top: -60px;
     }
+
+  /* Galerie und Slider */
+  .gallery{
+    height: 70vh;
+}
+
+.gallery-cards {
+    border-radius: .5rem;
+}
+
+.gallery__card{
+
+height: 200px;
+width: 300px;
+
+}
+
+/* Bilder und Thumbnails */
+.gallery__img {
+    height: 200px;
+width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+.gallery__thumbnail-img {
+    max-width: 40px;
+}
+
+/* Galerie Layout auf kleinen Geräten */
+.gallery__data {
+    display: none;
+} 
+
     .swiper-button-next,
     .swiper-button-prev {
-        width: 2px; /* Kleinste Größe auf Smartphones */
-        height: 2px;
+        width: 1.5px; /* Kleinste Größe auf Smartphones */
+        height: 1.5px;
         font-size: 1px; /* Symbol weiter verkleinern */
     }
 }
