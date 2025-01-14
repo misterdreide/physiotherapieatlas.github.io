@@ -155,7 +155,7 @@ header {
     position: relative;
     width: 100%;
     height: 100vh;
-    /*background: url(images/foyer.jpg);*/
+    background: url(images/foyer.jpg);
     background-size: cover;
     background-position: center;
     display: grid;
@@ -836,8 +836,9 @@ footer {
 
 .gallery__card{
 
-height: 160px;
-width: 180px;
+height: 130px;
+width: 210px;
+border-radius: 1.5rem;
 
 }
 
@@ -849,8 +850,20 @@ width: 180px;
     height: auto;
 }
 
+.gallery-thumbs {
+    width: 180px; 
+    max-width: 200px; /* Optionale Begrenzung */
+    box-sizing: border-box; /* Hilft bei der Berechnung der Breite */
+    overflow: hidden;
+}
+
+.gallery .swiper-slide {
+    width: 20%; /* Damit immer 3 Thumbnails nebeneinander angezeigt werden */
+}
+
 .gallery__thumbnail-img {
-    max-width: 40px;
+    max-width: 2px;
+    height:auto;
 }
 
 /* Galerie Layout auf kleinen Geräten */
@@ -860,9 +873,7 @@ width: 180px;
 
     .swiper-button-next,
     .swiper-button-prev {
-        width: 1.5px; /* Kleinste Größe auf Smartphones */
-        height: 1.5px;
-        font-size: 1px; /* Symbol weiter verkleinern */
+       display: none;
     }
 }
 
