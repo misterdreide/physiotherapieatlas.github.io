@@ -836,14 +836,14 @@ footer {
 
 .gallery__card{
 
-height: 150px;
+height: 140px;
 width: 180px;
 
 }
 
 /* Bilder und Thumbnails */
 .gallery__img {
-    height: 135px;
+    height: 150px;
 width: 180px;
     width: 100%;
     height: auto;
