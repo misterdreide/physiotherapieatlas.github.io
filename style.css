@@ -279,18 +279,6 @@ header {
     z-index: 10;
 }
 
-.gallery__title, .gallery__subtitle{
-    color: rgb(135, 246, 250);
-    font-weight: 500;
-}
-
-.gallery__title{
-    font-size: 1.5rem;
-}
-
-.gallery__subtitle{
-    font-size: 1rem;
-}
 
 .gallery__overflow{
     position: relative;
