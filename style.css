@@ -155,7 +155,7 @@ header {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(images/foyer.jpg);
+    /*background: url(images/foyer.jpg);*/
     background-size: cover;
     background-position: center;
     display: grid;
@@ -745,8 +745,8 @@ footer {
 
 .gallery__card{
 
-    height: 130px;
-    width: 180px;
+    height: 150px;
+    width: 200px;
 }
 
     /* Bilder und Thumbnails */
@@ -836,8 +836,8 @@ footer {
 
 .gallery__card{
 
-height: 200px;
-width: 300px;
+height: 180px;
+width: 200px;
 
 }
 
