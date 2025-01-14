@@ -273,6 +273,7 @@ header {
 }
 
 .gallery__data{
+    display: none;
     bottom: 1.5rem;
     left: 1.75rem;
     z-index: 10;
@@ -756,8 +757,8 @@ footer {
 
 .gallery__card{
 
-    height: 150px;
-    width: 200px;
+    height: 130px;
+    width: 180px;
 }
 
     /* Bilder und Thumbnails */
