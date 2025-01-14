@@ -862,8 +862,9 @@ width: 180px;
 }
 
 .gallery__thumbnail-img {
-    max-width: 2px;
+    width: 40px;
     height:auto;
+    border-radius: 0.5rem;
 }
 
 /* Galerie Layout auf kleinen Geräten */
