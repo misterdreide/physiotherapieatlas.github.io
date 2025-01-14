@@ -843,8 +843,8 @@ width: 180px;
 
 /* Bilder und Thumbnails */
 .gallery__img {
-    height: 200px;
-width: 300px;
+    height: 150px;
+width: 180px;
     width: 100%;
     height: auto;
 }
