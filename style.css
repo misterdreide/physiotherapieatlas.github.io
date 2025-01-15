@@ -888,6 +888,22 @@ width: 180px;
     .swiper-button-prev {
        display: none;
     }
+
+    .wrapper .back-face .info .title {
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 30px;
+    }
+    .wrapper .back-face .info p {
+        font-size: 15px;
+    }
+    .wrapper .back-face .icons img{
+        width: 30px; 
+        height: 30px;
+}
+
+
+
 }
 
 
