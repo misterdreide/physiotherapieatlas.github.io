@@ -671,15 +671,15 @@ footer {
 
 
     .nav-btn {
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin: 20px 20px;
-        padding: 5px 5px;
+        padding: 10px 10px;
     }
 
     .nav-btn2, .call-btn, .form-btn {
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin: 15x 20px;
-        padding: 5px 5px;
+        padding: 15px 15px;
     }
 
     .navlist a {
@@ -823,6 +823,7 @@ footer {
 
 /* Für sehr kleine Bildschirme (z.B. Handys) */
 @media (max-width: 768px)  {
+
     .hero {
         height: 100vh;
     }
