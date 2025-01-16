@@ -737,11 +737,6 @@ footer {
         object-fit: contain;
     }
 
-    .schiff img{
-        max-width: 100%;
-        max-height: auto;
-    }
-
     /* Galerie und Slider */
     .gallery{
         height: 70vh;
