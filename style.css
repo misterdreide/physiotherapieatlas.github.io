@@ -64,7 +64,7 @@ header {
     margin: 10px 10px;
     transition-duration: 0.4s;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 24px;
     border-radius: 10px;
 }
 .nav-btn2 {
@@ -79,7 +79,7 @@ header {
     margin: 10px 10px;
     transition-duration: 0.4s;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 24px;
     border-radius: 10px;
 }
 
