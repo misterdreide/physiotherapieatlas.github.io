@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://www.physiotherapieatlas.de/</loc>
-        <lastmod>2025-01-16</lastmod>
+        <lastmod>2025-01-17</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
         <loc>https://www.physiotherapieatlas.de/formular.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <priority>0.80</priority>
+        <lastmod>2025-01-16</lastmod>
+        <priority>1.00</priority>
     </url>
     <url>
         <loc>https://www.physiotherapieatlas.de/termin.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-01-17</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://www.physiotherapieatlas.de/impressum.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-01-17</lastmod>
         <priority>0.50</priority>
     </url>
     <url>
         <loc>https://www.physiotherapieatlas.de/datenschutz.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2025-01-17</lastmod>
         <priority>0.50</priority>
     </url>
 </urlset>
