@@ -695,8 +695,15 @@ footer {
         height: auto;
     }
 
+.hero-img{
+margin-top: -60px;
+width: 300px;
+height: 300px;
+}
+
     .hero-text {
         padding-top: 130px;
+        margin-top: 160px;
     }
 
     .hero-text h1 {
@@ -748,8 +755,8 @@ footer {
 
 .gallery__card{
 
-    height: 150px;
-    width: 200px;
+    height: 250px;
+    width: 400px;
 }
 
     /* Bilder und Thumbnails */
@@ -831,7 +838,6 @@ footer {
 
     .hero-text {
         margin-top: 160px;
-        margin-left: 10px;
       }
 
   /* Galerie und Slider */
@@ -845,8 +851,8 @@ footer {
 
 .gallery__card{
 
-height: 130px;
-width: 210px;
+height: 180px;
+width: 290px;
 border-radius: 1.5rem;
 
 }
