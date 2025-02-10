@@ -391,6 +391,10 @@ header {
     scroll-snap-type: initial;
 }
 
+.nice-img{
+    border-radius: 1.5rem;
+}
+
 .wrapper {
     display: flex;
     height: 400px;
@@ -891,6 +895,12 @@ width: 180px;
     .swiper-button-prev {
        display: none;
     }
+
+.nice-img{
+    height: auto;
+    width: 250px;
+}
+
 
     .wrapper .back-face .info .title {
         font-size: 20px;
