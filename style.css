@@ -902,6 +902,37 @@ width: 180px;
 }
 
 
+.wrapper {
+    display: flex;
+    height: 400px;
+    width: 320px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.wrapper .card {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transition: 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+
+.wrapper .back-face img {
+    height: 80px;
+    width: 80px;
+   
+    border-radius: 50%;
+    padding: 5px;
+  background: linear-gradient(375deg, #d8f0f3ea, #12b5caea); 
+}
+
+
+
     .wrapper .back-face .info .title {
         font-size: 20px;
         font-weight: 600;
