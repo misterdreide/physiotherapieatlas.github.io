@@ -902,15 +902,6 @@ width: 180px;
 }
 
 
-.wrapper {
-    display: flex;
-    height: 400px;
-    width: 320px;
-    position: relative;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-}
-
 
 .wrapper .back-face img {
     height: 80px;
