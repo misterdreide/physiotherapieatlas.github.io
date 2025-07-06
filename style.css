@@ -11,17 +11,6 @@ html,body{
     height: 100%;
    
 }
-
-h1{
-    color: rgb(61, 107, 136);
-    text-decoration: bold;
-}
-
-h2{
-    color: rgb(61, 107, 136);
-    text-decoration: bold;
-}
-
 p {
     line-height: 1.5; /* Einfacher Zeilenabstand */
   }
@@ -38,7 +27,7 @@ header {
     align-items: center;
     justify-content: space-between;
     transition: all 0.50s ease;
-    background-color: rgb(61, 107, 136);
+    background-color: rgb(31, 32, 32);
 }
 
 .navlist {
@@ -48,14 +37,14 @@ header {
 .navlist a {
     display: inline-block;
     margin: 0 35px;
-    color: rgb(255, 255, 255);
+    color: aliceblue;
     font-size: 1.5rem;
     transition: all .6s ease;
 }
 
 .navlist a:hover {
-    color: rgb(98, 186, 241);
-    text-decoration: double;
+    color: lightskyblue;
+    transform: translateY(-5px);
 }
 
 .right-content {
@@ -185,7 +174,7 @@ header {
   }
   
   .hero-img.active {
-    opacity: 0.9;
+    opacity: 0.55;
     transform: scale(1); /* Endzustand: Originalgröße */
   }
   
