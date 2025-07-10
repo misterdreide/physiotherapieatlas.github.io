@@ -96,18 +96,19 @@ header {
 
 
 .call-btn, .form-btn {
+    border-style: solid;
     border-color: lightskyblue;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    padding: 10px 32px;
+    padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 10px 10px;
     transition-duration: 0.4s;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 24px;
     border-radius: 10px;
 }
 
@@ -125,6 +126,8 @@ header {
 }
 
 .call-btn:hover, .form-btn:hover{
+    background-color: lightskyblue;
+    color: black;
     transform: scale(1.2);
 }
 
@@ -518,7 +521,7 @@ header {
 .col a {
     color: #333; /* Link-Farbe */
     text-decoration: none; /* Entferne die Unterstreichung */
-    padding: 5px 10px; /* Etwas Innenabstand für die Links */
+    padding: 10px 10px; /* Etwas Innenabstand für die Links */
     border-radius: 5px; /* Runde Ecken */
     transition: background-color 0.3s ease; /* Schöne Übergänge für Hover */
 }
